@@ -1,0 +1,281 @@
+import React, { act } from "react";
+import { NavLink } from "react-router-dom";
+
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import "./Sidebar.css";
+
+
+const SidebarMenu = () => {
+  const styleActive = ({ isActive }) => ({
+    backgroundColor: isActive ? "#0E1667" : "",
+    borderRadius: "10px",
+    color: isActive ? "#FFFFFF":"",
+  });
+
+
+  return (
+    <div
+      className="div-sidebar"
+      style={{
+        width: "310px",
+      }}
+    >
+      <Sidebar
+        width="310px"
+        rootStyles={{
+          borderRadius: "10px",
+        }}
+      >
+        <Menu
+          menuItemStyles={{
+            button: ({ level, active }) => {
+              if (level === 0 || level === 1 || level === 2) {
+                return {
+                  backgroundColor: active ? "#0E1667" : undefined,
+                  color: active ? "#0E1667" : undefined,
+                  borderRadius: "10px",
+                  "&:hover": {
+                    backgroundColor: "#0E1667",
+                    color: "white",
+                  },
+                };
+              }
+            },
+          }}
+        >
+          <MenuItem component={<NavLink to="/circuit" style={styleActive} />}>
+            Схема
+          </MenuItem>
+          <SubMenu label="Теория">
+            <MenuItem
+              component={
+                <NavLink to="/lectures/quantum_bit" style={styleActive} />
+              }
+            >
+              Квантовый бит
+            </MenuItem>
+            <MenuItem
+              component={
+                <NavLink to="/lectures/quantum_system" style={styleActive} />
+              }
+            >
+              Квантовая система
+            </MenuItem>
+            <MenuItem
+              component={
+                <NavLink
+                  to="/lectures/measurement_in_quantum_system"
+                  style={styleActive}
+                />
+              }
+            >
+              Измерение квантовой системы
+            </MenuItem>
+            <SubMenu label="Квантовые гейты">
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/hadamard_gate" style={styleActive} />
+                }
+              >
+                Гейт Адамара
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/X_gate" style={styleActive} />
+                }
+              >
+                Оператор NOT (Гейт X)
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/Z_gate" style={styleActive} />
+                }
+              >
+                Гейт Z
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/Y_gate" style={styleActive} />
+                }
+              >
+                Гейт Y
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/S_gate" style={styleActive} />
+                }
+              >
+                Гейт S
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/T_gate" style={styleActive} />
+                }
+              >
+                Гейт T
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/RxRyRz_gate" style={styleActive} />
+                }
+              >
+                Гейты поворота Rx, Ry, Rz
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/U_gates" style={styleActive} />
+                }
+              >
+                <div>Произвольные однокубитные</div>
+                <div>унитарные гейты U</div>
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/table_gates" style={styleActive} />
+                }
+              >
+                <div>Таблица однокубитных</div>
+                <div>гейтов</div>
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/controlled_gates"
+                    style={styleActive}
+                  />
+                }
+              >
+                Контролируемые гейты
+              </MenuItem>
+            </SubMenu>
+            <SubMenu label="Квантовые алгоритмы">
+              <MenuItem
+                component={
+                  <NavLink to="/lectures/Bell_state" style={styleActive} />
+                }
+              >
+                {" "}
+                <div>Перепутанные состояния</div>
+                <div> двух кубитов. Базис Белла</div>
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/superdense_coding"
+                    style={styleActive}
+                  />
+                }
+              >
+                {" "}
+                Сверхплотное кодирование
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/quantum_teleportation"
+                    style={styleActive}
+                  />
+                }
+              >
+                {" "}
+                Квантовая телепортация
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/Deutsch–Jozsa_algorithm"
+                    style={styleActive}
+                  />
+                }
+              >
+                {" "}
+                <div>Алгоритм Дойча.</div>
+                <div>Задача Дойча-Джозы</div>
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/Grover's_algorithm"
+                    style={styleActive}
+                  />
+                }
+              >
+                {" "}
+                Алгоритм Гровера
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/quantum_fourier_transform"
+                    style={styleActive}
+                  />
+                }
+              >
+                {" "}
+                <div>Квантовое</div>
+                <div>преобразование Фурье</div>
+              </MenuItem>
+              <MenuItem
+                component={
+                  <NavLink
+                    to="/lectures/Shor's_algorithm"
+                    style={styleActive}
+                  />
+                }
+              >
+                {" "}
+                Алгоритм Шора
+              </MenuItem>
+            </SubMenu>
+          </SubMenu>
+          <SubMenu label="Практика">
+            <MenuItem component={
+                <NavLink
+                  to="/practice/practice1"
+                  style={styleActive}
+                  />
+              }> Практика 1</MenuItem>
+            <MenuItem component={
+                <NavLink
+                  to="/practice/practice2"
+                  style={styleActive}
+                  />
+                   
+            }> Практика 2</MenuItem>
+            <MenuItem component={
+                <NavLink
+                  to="/practice/practice3"
+                  style={styleActive}
+                  /> 
+            }> Практика 3</MenuItem>
+            <MenuItem component={
+                <NavLink
+                  to="/practice/practice4"
+                  style={styleActive}
+                  /> 
+            }> Практика 4</MenuItem>
+          </SubMenu>
+          <SubMenu label='Материалы'>
+            <MenuItem 
+              onClick={() => window.open('/theory.pdf', '_blank')}
+            >Пособие</MenuItem>
+            <MenuItem component={
+              <NavLink
+                to="https://quantum.msu.ru/ru/education/online/introduction-to-quantum-computing"
+                style={styleActive}
+                />
+            }>Курс по квантовым<br></br>вычислениям </MenuItem>
+            <MenuItem component={
+              <NavLink
+                to="https://quantum.msu.ru/ru/education/online/physical-base-for-quantum-computing"
+                style={styleActive}
+                />
+            }>Курс по физическим основам<br></br>квантовых вычислений</MenuItem>
+          </SubMenu>
+        </Menu>
+      </Sidebar>
+    </div>
+  );
+};
+
+export default SidebarMenu;
