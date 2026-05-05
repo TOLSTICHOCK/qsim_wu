@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f452413.css",
-    "main.js": "/static/js/main.f498e2f4.js",
+    "main.css": "/static/css/main.23104234.css",
+    "main.js": "/static/js/main.7025c172.js",
     "static/js/453.c2d7fa39.chunk.js": "/static/js/453.c2d7fa39.chunk.js",
     "static/media/video1.mp4": "/static/media/video1.a6ea5b0513e44aabdbb8.mp4",
     "static/media/p1_drawing1.png": "/static/media/p1_drawing1.819662f21c7d851f31ae.png",
@@ -11,7 +11,6 @@
     "static/media/sum_00_01-10_11.png": "/static/media/sum_00_01-10_11.26db17a8addd795a20af.png",
     "static/media/sum_00_01_10_11.png": "/static/media/sum_00_01_10_11.3246145497e2eb6e69b0.png",
     "static/media/dif_00_01_10_11.png": "/static/media/dif_00_01_10_11.3eed60c7d73a8bf48f5d.png",
-    "static/media/tsu_logo.svg": "/static/media/tsu_logo.e0a3eed5badc4c92f2f9.svg",
     "static/media/sum_010_111.png": "/static/media/sum_010_111.b4ecfb953cbbab22b2b0.png",
     "static/media/dif_001_111.png": "/static/media/dif_001_111.b1ec1dc20676d5dd5b2e.png",
     "static/media/sum_001_111.png": "/static/media/sum_001_111.addb3330cbc3a6380964.png",
@@ -28,6 +27,7 @@
     "static/media/lecture6-formula3.png": "/static/media/lecture6-formula3.ba3d3fa0f50d96b0c474.png",
     "static/media/lecture5-formula3.png": "/static/media/lecture5-formula3.6b162d6db9e912f6c854.png",
     "static/media/lecture4-formula8.png": "/static/media/lecture4-formula8.e50742118d7d3cc55d57.png",
+    "static/media/sqc_logo.svg": "/static/media/sqc_logo.920badf04f52f32bdc06.svg",
     "static/media/p1_formula1.png": "/static/media/p1_formula1.1451fdff80d5859d8bae.png",
     "static/media/p1_drawing6.png": "/static/media/p1_drawing6.7d68d1db5a704cdd7549.png",
     "static/media/lecture15-formula2.png": "/static/media/lecture15-formula2.a3819b3025dd0663a2d4.png",
@@ -71,14 +71,14 @@
     "static/media/p1_drawing8_4.png": "/static/media/p1_drawing8_4.3255b93e2159f5e933d0.png",
     "static/media/p1_drawing5_5.png": "/static/media/p1_drawing5_5.e013eed708d0a63df4c0.png",
     "static/media/lecture20-formula7.png": "/static/media/lecture20-formula7.3f77fc4d56198c8e2cf7.png",
-    "static/media/icons8-trash.svg": "/static/media/icons8-trash.ddade64e2cede4381a65.svg",
+    "static/media/trash_icon.svg": "/static/media/trash_icon.fef6ededd1602fb5f6be.svg",
     "index.html": "/index.html",
-    "main.4f452413.css.map": "/static/css/main.4f452413.css.map",
-    "main.f498e2f4.js.map": "/static/js/main.f498e2f4.js.map",
+    "main.23104234.css.map": "/static/css/main.23104234.css.map",
+    "main.7025c172.js.map": "/static/js/main.7025c172.js.map",
     "453.c2d7fa39.chunk.js.map": "/static/js/453.c2d7fa39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f452413.css",
-    "static/js/main.f498e2f4.js"
+    "static/css/main.23104234.css",
+    "static/js/main.7025c172.js"
   ]
 }
